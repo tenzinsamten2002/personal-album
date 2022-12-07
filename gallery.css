@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: black;
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 10px 0 10px;
+  
+}
+
+.container .heading{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .heading h3{
+  font-size: 3em;
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.container .heading h3 span{
+  font-weight: 100;
+}
+.container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.container .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.container .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container .btn a{
+ color: #fff;
+ font-size: 1.2em;
+ text-decoration: none;
+ font-weight: bolder;
+ letter-spacing: 3px;
+}
+
+.view-icon{
+  color: white;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -6%;
+  left: 43%;
+}
+.view-icon1{
+  width: 50px;
+  height: 50px;
+}
+
+.dream img:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+
+
+
+
+/*FOR THE MOBILE RESPONSIVE PART*/
+@media only screen and (max-width: 769px){
+    .container .box{
+   flex-direction: column;
+  }
+
+.container .box .dream{
+  width: 100%;
+}
+.view-icon{
+  top: -13vh;
+}
+}
+
+@media only screen and (max-width: 643px){
+.container .heading{
+  width: 100%;
+}
+.container .heading h3{
+  font-size: 1em;
+
+}
+.view-icon{
+  top: -13vh;
+}
+}
+
+@media screen and (min-width:800px) {
+  .view-icon{
+    top: -6%;
+    left: 43%;
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fullview.css">
+    <link rel="stylesheet" href="./style2.css">
+    <title>FULL-VIEW</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links ">
+            <ul>
+                <li class="active"><a href="./index.html">HOME</a></li>
+                <li><a href="./gallery-travelling.html" class="signup">TRAVELING</a></li>
+                <li><a href="./gallery-food.html" class="signup">FOOD</a></li>
+                <li><a href="./gallery-pet.html" class="signup">PET</a></li>
+                <li><a href="./gallery-myfav.html" class="signup">MY FAV</a></li>
+            </ul>
+        </div>
+        
+        <img src="img/menu-btn.png" alt="menu-btn" class="menu-btn">
+    </nav>
+    <header>
+    </header>
+    <div class="bg-blur">
+        <div class="f-img">
+            <section class="container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="./img/1.jpg" />
+                        <img id="slide-2" src="./img/2.jpg" />
+                        <img id="slide-3" src="./img/3.jpg" />
+                        <img id="slide-4" src="./img/4.jpg" />
+                        <img id="slide-5" src="./img/5.jpg" />
+                        <img id="slide-6" src="./img/6.jpg" />
+                        <img id="slide-7" src="./img/7.jpg" />
+                        <img id="slide-8" src="./img/8.jpg" />
+                        <img id="slide-9" src="./img/9.jpg" />
+                        <img id="slide-10" src="./img/10.jpg" />
+                        <img id="slide-11" src="./img/11.jpg" />
+                        <img id="slide-12" src="./img/12.jpg" />
+                        <img id="slide-13" src="./img/13.jpg" />
+                        <img id="slide-14" src="./img/14.jpg" />
+                        <img id="slide-15" src="./img/15.jpg" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                        <a href="#slide-8"></a>
+                        <a href="#slide-9"></a>
+                        <a href="#slide-10"></a>
+                        <a href="#slide-11"></a>
+                        <a href="#slide-12"></a>
+                        <a href="#slide-13"></a>
+                        <a href="#slide-14"></a>
+                        <a href="#slide-15"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="back-btn">
+        <a href="./gallery-myfav.html">back</a>
+    </div>
+</body>
+<script>
+    const menu = document.querySelector(".menu-btn")
+    const navLinks = document.querySelector(".nav-links")
+    const name = document.querySelector(".bg-blur")
+    
+    
+    
+    menu.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+        name.classList.toggle('mobile-menu1')
+        
+    });
+    </script>
+</html>

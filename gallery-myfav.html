@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY FAV</title>
+	<link rel="stylesheet" type="text/css" href="gallery.css  ">
+  <link rel="stylesheet" href="./style2.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <!--FOR IMPORTING THE ICONS-->
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><!--FOR IMPORTING THE ICONS-->
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-links ">
+      <ul>
+          <li class="active"><a href="./index.html">HOME</a></li>
+          <li><a href="./gallery-travelling.html" class="signup">TRAVELING</a></li>
+          <li><a href="./gallery-food.html" class="signup">FOOD</a></li>
+          <li><a href="./gallery-pet.html" class="signup">PET</a></li>
+          <li><a href="./gallery-myfav.html" class="signup">MY FAV</a></li>
+      </ul>
+  </div>
+    
+    <img src="img/menu-btn.png" alt="menu-btn" class="menu-btn">
+</nav>
+<header>
+</header>
+  <div class="container">
+    <div class="heading">
+      <h3>MY FAV <span>Gallery</span></h3>
+    </div>
+    <div class="box">
+      
+      <div class="dream">
+        <img src="./img/1.jpg"><a href="./fullview-myfav.html#slide-1" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+         <img src="./img/2.jpg"><a href="./fullview-myfav.html#slide-2" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+          <img src="./img/3.jpg"><a href="./fullview-myfav.html#slide-3" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+           <img src="./img/4.jpg"><a href="./fullview-myfav.html#slide-4" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+            <img src="./img/5.jpg"><a href="./fullview-myfav.html#slide-5" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+            
+      </div>
+
+        <div class="dream">
+        <img src="./img/6.jpg"><a href="./fullview-myfav.html#slide-6" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+         <img src="./img/7.jpg"><a href="./fullview-myfav.html#slide-7" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+          <img src="./img/8.jpg"><a href="./fullview-myfav.html#slide-8" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+           <img src="./img/9.jpg"><a href="./fullview-myfav.html#slide-9" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+            <img src="./img/10.jpg"><a href="./fullview-myfav.html#slide-10" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+            
+      </div>
+
+        <div class="dream">
+        <img src="./img/11.jpg"><a href="./fullview-myfav.html#slide-11" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+         <img src="./img/12.jpg"><a href="./fullview-myfav.html#slide-12" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+          <img src="./img/13.jpg"><a href="./fullview-myfav.html#slide-13" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+           <img src="./img/14.jpg"><a href="./fullview-myfav.html#slide-14" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+            <img src="./img/15.jpg"><a href="./fullview-myfav.html#slide-15" class="view-icon"><ion-icon name="eye-sharp" class="view-icon1"></ion-icon></a></img>
+            
+      </div>
+
+
+
+
+    </div>
+    <div class="btn">
+      <a href="#">More</a>
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+<script>
+  const menu = document.querySelector(".menu-btn")
+  const navLinks = document.querySelector(".nav-links")
+  const name = document.querySelector(".bg-blur")
+  
+  
+  
+  menu.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-menu')
+      name.classList.toggle('mobile-menu1')
+      
+  });
+  </script>
+</html>

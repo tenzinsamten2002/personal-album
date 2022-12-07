@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>MYALBUM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"><div class="logo1">MYALBUM</div></a>
+        <div class="nav-links ">
+            <ul>
+                <li class="active"><a href="./index.html">HOME</a></li>
+                <li><a href="./gallery-travelling.html" class="signup">TRAVELING</a></li>
+                <li><a href="./gallery-food.html" class="signup">FOOD</a></li>
+                <li><a href="./gallery-pet.html" class="signup">PET</a></li>
+                <li><a href="./gallery-myfav.html" class="signup">MY FAV</a></li>
+            </ul>
+        </div>
+        
+        <img src="img/menu-btn.png" alt="menu-btn" class="menu-btn">
+    </nav>
+    <header>
+    <div class="bg-blur"><h1 class="name">MY PERSONAL ALBUM</h1></div></header>
+    
+    
+</body>
+<script>
+const menu = document.querySelector(".menu-btn")
+const navLinks = document.querySelector(".nav-links")
+const name = document.querySelector(".bg-blur")
+
+
+
+menu.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu')
+    name.classList.toggle('mobile-menu1')
+    
+});
+</script>
+
+</html>
